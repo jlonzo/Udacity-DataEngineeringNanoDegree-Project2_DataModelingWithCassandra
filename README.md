@@ -33,7 +33,7 @@ Part II. Project Code.
     * Development to process and load Master _event_datafile_new.csv_ file
     * Development of SELECT query in order to test/verifiy table fulfill User Requirements
 
-    End of Process
+End of Process
     * Table destruction
     * Session and Cluster termination
 
