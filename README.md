@@ -18,24 +18,24 @@ The User needs to be able to get the data using the following query definitions:
 
 ## Database
 The destination is a Cassandra keyspace called _udacity_ using three denormalized tables:
-    * songplays_bySessionId: Returns Song Information (artist,title,lenght) for a particula SessionId and SessionItem
-    * songplays_byUserId   : Returns Song (artist,title) and UserName (First,Last) for any given UserId and SessionId, ordered by ItemsInSession
-    * userName_bySongTitle : Returns User's FirstName and LastName for users who have listened any given Song (song_title)
+   * songplays_bySessionId: Returns Song Information (artist,title,lenght) for a particula SessionId and SessionItem
+   * songplays_byUserId   : Returns Song (artist,title) and UserName (First,Last) for any given UserId and SessionId, ordered by ItemsInSession
+   * userName_bySongTitle : Returns User's FirstName and LastName for users who have listened any given Song (song_title)
 
 ## Jupyter Notebook contents
 Part I. ETL Pipeline for Pre-Processing the Files:
-    * Creation of one Master (_event_datafile_new.csv_) CSV file which includes the data in each CSV file in _event_data_ folder
-    * Initialization of Cassandra connector, including _udacity_ keyspace
+   * Creation of one Master (_event_datafile_new.csv_) CSV file which includes the data in each CSV file in _event_data_ folder
+   * Initialization of Cassandra connector, including _udacity_ keyspace
 
-Part II. Project Code. 
-    The following activites were developed for each of the three queries:
-    * Development of CREATE query for table creation
-    * Development to process and load Master _event_datafile_new.csv_ file
-    * Development of SELECT query in order to test/verifiy table fulfill User Requirements
+Part II. Project Code.
+   The following activites were developed for each of the three queries:
+   * Development of CREATE query for table creation
+   * Development to process and load Master _event_datafile_new.csv_ file
+   * Development of SELECT query in order to test/verifiy table fulfill User Requirements
 
 End of Process
-    * Table destruction
-    * Session and Cluster termination
+   * Table destruction
+   * Session and Cluster termination
 
 ## Software Pre-Requisites
 The following Tools and Modules need to be installed in order to to run the code in this repository:
